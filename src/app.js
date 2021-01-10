@@ -60,7 +60,7 @@ app.get('/weather', (req, res) => {
                 foreCast: forecastData,
                 location,
                 address: req.query.address,
-                observation: forecastData.time
+                localTime: forecastData.time
             })  
         })
     })
